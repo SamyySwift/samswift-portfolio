@@ -1,3 +1,10 @@
+import aiCustomerSupportImg from '@/assets/ai-customer-support.jpg';
+import predictiveAnalyticsImg from '@/assets/predictive-analytics.jpg';
+import cakeEcommerceImg from '@/assets/cake-ecommerce.jpg';
+import documentIntelligenceImg from '@/assets/document-intelligence.jpg';
+import fraudDetectionImg from '@/assets/fraud-detection.jpg';
+import portfolioWebappImg from '@/assets/portfolio-webapp.jpg';
+
 export interface Project {
   id: string;
   title: string;
@@ -30,7 +37,7 @@ export const projects: Project[] = [
       "24/7 automated assistance",
       "95% customer satisfaction rate",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: aiCustomerSupportImg,
     liveUrl: "https://example.com/ai-support",
     featured: true,
     metrics: [
@@ -52,7 +59,7 @@ export const projects: Project[] = [
       "Processed 5M+ data points daily",
       "Reduced manual analysis time by 80%",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: predictiveAnalyticsImg,
     liveUrl: "https://example.com/predictive",
     featured: true,
     metrics: [
@@ -75,7 +82,7 @@ export const projects: Project[] = [
       "Real-time product management with Supabase",
       "Category-based browsing (Birthday, Wedding, Cupcakes, Specialty)",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: cakeEcommerceImg,
     liveUrl: "https://cake-ecommerce-site.vercel.app/",
     featured: true,
     metrics: [
@@ -97,7 +104,7 @@ export const projects: Project[] = [
       "90% time savings on manual entry",
       "Processed 1M+ documents",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: documentIntelligenceImg,
     liveUrl: "https://example.com/docuflow",
     featured: false,
   },
@@ -114,7 +121,7 @@ export const projects: Project[] = [
       "Reduced false positives by 60%",
       "Processing <100ms per transaction",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: fraudDetectionImg,
     liveUrl: "https://example.com/securepay",
     featured: false,
     metrics: [
@@ -136,7 +143,7 @@ export const projects: Project[] = [
       "Real-time data updates",
       "50K+ active users",
     ],
-    imageUrl: "/placeholder.svg",
+    imageUrl: portfolioWebappImg,
     liveUrl: "https://example.com/investtrack",
     featured: false,
   },
