@@ -18,24 +18,24 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 backdrop-blur-sm border border-border">
             <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" />
             <span className="text-sm font-medium text-muted-foreground">
-              Award-Winning Digital Agency
+              Available for Projects
             </span>
           </div>
 
           {/* Heading */}
           <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-            We Craft{" "}
+            AI & ML{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Exceptional
+              Engineer
             </span>
             <br />
-            Digital Experiences
+            Building Intelligent Solutions
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            From innovative startups to Fortune 500 companies, we build high-performance 
-            web solutions that drive measurable results and delight users.
+            Specializing in AI Automation, Machine Learning, and Web Development. 
+            I transform complex problems into elegant, scalable solutions.
           </p>
 
           {/* CTA Buttons */}
@@ -46,7 +46,7 @@ const Hero = () => {
               asChild
             >
               <a href="#projects">
-                View Our Work
+                View My Work
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -57,7 +57,7 @@ const Hero = () => {
               asChild
             >
               <a href="#contact">
-                Start a Project
+                Book a Consultation
               </a>
             </Button>
           </div>
@@ -65,10 +65,10 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 max-w-4xl mx-auto">
             {[
-              { value: "150+", label: "Projects Delivered" },
-              { value: "98%", label: "Client Satisfaction" },
-              { value: "50+", label: "Team Members" },
-              { value: "12+", label: "Years Experience" },
+              { value: "50+", label: "Projects Completed" },
+              { value: "100%", label: "Client Satisfaction" },
+              { value: "3", label: "Specializations" },
+              { value: "5+", label: "Years Experience" },
             ].map((stat, index) => (
               <div key={index} className="space-y-2">
                 <div className="font-display font-bold text-3xl md:text-4xl text-foreground">

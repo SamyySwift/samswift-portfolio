@@ -11,13 +11,13 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center space-y-4 mb-16 animate-fade-in-up">
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl">
-              Let's Build{" "}
+              Let's Work{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Something Great
+                Together
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ready to transform your vision into reality? Get in touch and let's discuss your project.
+              Have a project in mind? Book a free consultation and let's discuss how I can help bring your ideas to life.
             </p>
           </div>
 
@@ -50,23 +50,28 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="company" className="text-sm font-medium text-foreground">
-                    Company
+                  <label htmlFor="service" className="text-sm font-medium text-foreground">
+                    Service Needed
                   </label>
-                  <Input
-                    id="company"
-                    placeholder="Your Company"
-                    className="bg-card border-border"
-                  />
+                  <select
+                    id="service"
+                    className="flex h-10 w-full rounded-md border border-border bg-card px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="ai-automation">AI Automation</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="consultation">General Consultation</option>
+                  </select>
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground">
-                    Message
+                    Project Details
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell me about your project and what you're looking to achieve..."
                     rows={6}
                     className="bg-card border-border resize-none"
                   />
@@ -77,7 +82,7 @@ const Contact = () => {
                   size="lg" 
                   className="w-full bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity group"
                 >
-                  Send Message
+                  Book Consultation
                   <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </form>
@@ -87,7 +92,7 @@ const Contact = () => {
             <div className="space-y-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
               <div className="p-8 rounded-2xl bg-gradient-card backdrop-blur-sm border border-border">
                 <h3 className="font-display font-semibold text-xl mb-6">
-                  Get in Touch
+                  Contact Information
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -97,10 +102,10 @@ const Contact = () => {
                     <div>
                       <div className="font-medium text-foreground mb-1">Email</div>
                       <a 
-                        href="mailto:hello@yourcompany.com"
+                        href="mailto:hello@example.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        hello@yourcompany.com
+                        hello@example.com
                       </a>
                     </div>
                   </div>
@@ -127,31 +132,32 @@ const Contact = () => {
                     <div>
                       <div className="font-medium text-foreground mb-1">Location</div>
                       <p className="text-muted-foreground">
-                        123 Innovation Street<br />
-                        San Francisco, CA 94102
+                        Remote / Available Worldwide
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Quick Stats */}
-              <div className="grid grid-cols-2 gap-4">
+              {/* Services Cards */}
+              <div className="space-y-4">
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <div className="font-display font-bold text-3xl text-primary mb-1">
-                    24h
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    Response Time
-                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">AI Automation</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Intelligent workflows, chatbots, and process automation
+                  </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <div className="font-display font-bold text-3xl text-primary mb-1">
-                    100%
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    Satisfaction Rate
-                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">Machine Learning</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Predictive models, data analysis, and ML solutions
+                  </p>
+                </div>
+                <div className="p-6 rounded-xl bg-card border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">Web Development</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Full-stack applications with modern frameworks
+                  </p>
                 </div>
               </div>
             </div>

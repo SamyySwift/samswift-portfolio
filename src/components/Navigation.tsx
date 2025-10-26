@@ -36,7 +36,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button asChild className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
-              <a href="#contact">Get Started</a>
+              <a href="#contact">Book Consultation</a>
             </Button>
           </div>
 
@@ -83,7 +83,7 @@ const Navigation = () => {
                 Contact
               </a>
               <Button asChild className="bg-gradient-primary text-primary-foreground w-full mt-2">
-                <a href="#contact" onClick={() => setIsOpen(false)}>Get Started</a>
+                <a href="#contact" onClick={() => setIsOpen(false)}>Book Consultation</a>
               </Button>
             </div>
           </div>

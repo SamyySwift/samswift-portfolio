@@ -1,26 +1,26 @@
-import { Code2, Users, Rocket, Award } from "lucide-react";
+import { Brain, Code2, Zap, Trophy } from "lucide-react";
 
 const About = () => {
   const capabilities = [
     {
+      icon: Brain,
+      title: "AI Automation",
+      description: "Building intelligent systems that automate complex workflows and enhance decision-making.",
+    },
+    {
       icon: Code2,
-      title: "Cutting-Edge Technology",
-      description: "We leverage the latest frameworks and tools to build scalable, performant applications.",
+      title: "Machine Learning",
+      description: "Developing predictive models and data-driven solutions that deliver actionable insights.",
     },
     {
-      icon: Users,
-      title: "Expert Team",
-      description: "Our diverse team of designers, developers, and strategists brings decades of combined experience.",
+      icon: Zap,
+      title: "Web Development",
+      description: "Creating high-performance, responsive web applications with modern frameworks and best practices.",
     },
     {
-      icon: Rocket,
-      title: "Agile Process",
-      description: "Fast iterations, continuous delivery, and transparent communication throughout the project lifecycle.",
-    },
-    {
-      icon: Award,
-      title: "Award-Winning Work",
-      description: "Recognized by industry leaders for excellence in design, innovation, and user experience.",
+      icon: Trophy,
+      title: "Proven Results",
+      description: "Delivering projects that exceed expectations with measurable impact and lasting value.",
     },
   ];
 
@@ -31,14 +31,14 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center space-y-4 mb-16 animate-fade-in-up">
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl">
-              Why Choose{" "}
+              What I{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Us
+                Do
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We're not just developers—we're digital craftsmen obsessed with creating 
-              exceptional experiences that drive business results.
+              I'm a full-stack engineer specializing in AI/ML solutions and modern web development. 
+              My passion is transforming complex challenges into elegant, scalable systems.
             </p>
           </div>
 
@@ -66,14 +66,14 @@ const About = () => {
           {/* Process Section */}
           <div className="bg-gradient-card rounded-3xl p-8 md:p-12 backdrop-blur-sm border border-border">
             <h3 className="font-display font-bold text-2xl md:text-3xl mb-8 text-center">
-              Our Process
+              My Approach
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
-                { step: "01", title: "Discover", description: "Understanding your vision and goals" },
-                { step: "02", title: "Design", description: "Crafting beautiful, user-centric interfaces" },
-                { step: "03", title: "Develop", description: "Building with best practices and modern tech" },
-                { step: "04", title: "Deliver", description: "Launching and optimizing for success" },
+                { step: "01", title: "Understand", description: "Deep dive into your requirements and goals" },
+                { step: "02", title: "Strategize", description: "Design the optimal solution architecture" },
+                { step: "03", title: "Build", description: "Develop with clean code and best practices" },
+                { step: "04", title: "Optimize", description: "Test, refine, and deliver excellence" },
               ].map((phase, index) => (
                 <div key={index} className="text-center space-y-2">
                   <div className="font-display font-bold text-4xl text-primary/30 mb-2">

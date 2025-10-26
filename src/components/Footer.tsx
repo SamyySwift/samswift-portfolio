@@ -16,7 +16,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Building exceptional digital experiences that drive results.
+              AI/ML Engineer & Full-Stack Developer building intelligent solutions.
             </p>
             <div className="flex gap-4">
               <a
@@ -80,9 +80,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
+              <li className="text-muted-foreground">AI Automation</li>
+              <li className="text-muted-foreground">Machine Learning</li>
               <li className="text-muted-foreground">Web Development</li>
-              <li className="text-muted-foreground">UI/UX Design</li>
-              <li className="text-muted-foreground">Mobile Apps</li>
               <li className="text-muted-foreground">Consulting</li>
             </ul>
           </div>
@@ -93,10 +93,10 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="mailto:hello@yourcompany.com"
+                  href="mailto:hello@example.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  hello@yourcompany.com
+                  hello@example.com
                 </a>
               </li>
               <li>
@@ -108,7 +108,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-muted-foreground">
-                San Francisco, CA
+                Remote / Worldwide
               </li>
             </ul>
           </div>

@@ -34,14 +34,14 @@ const Projects = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center space-y-4 animate-fade-in-up">
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl">
-              Our{" "}
+              My{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Portfolio
+                Work
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover the full spectrum of our work—from Fortune 500 enterprises to 
-              innovative startups transforming their industries.
+              Explore my projects in AI Automation, Machine Learning, and Web Development—
+              delivering intelligent solutions that drive real results.
             </p>
           </div>
         </div>
