@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowLeft, ExternalLink, Calendar, Building2 } from "lucide-react";
+import { ArrowLeft, ExternalLink, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
@@ -61,14 +61,10 @@ const ProjectDetail = () => {
               </h1>
 
               <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-4 h-4" />
-                  <span>{project.client}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>{project.year}</span>
-                </div>
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                <span>{project.year}</span>
+              </div>
               </div>
 
               <p className="text-xl text-muted-foreground max-w-3xl">
@@ -122,50 +118,38 @@ const ProjectDetail = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Main Content */}
               <div className="lg:col-span-2 space-y-12">
-                {/* Results */}
+                {/* Challenge */}
                 <section className="animate-fade-in">
                   <h2 className="font-display font-bold text-2xl md:text-3xl mb-6">
-                    Results & Impact
+                    The Challenge
                   </h2>
                   <ul className="space-y-4">
-                    {project.results.map((result, index) => (
+                    {project.challenge.map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <div className="w-2 h-2 rounded-full bg-primary" />
+                        <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-2 h-2 rounded-full bg-destructive" />
                         </div>
-                        <span className="text-muted-foreground">{result}</span>
+                        <span className="text-muted-foreground">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </section>
 
-                {/* Detailed Description */}
+                {/* Solution */}
                 <section className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-                  <h2 className="font-display font-bold text-2xl md:text-3xl mb-6">
-                    The Challenge
-                  </h2>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-muted-foreground leading-relaxed">
-                      Our client needed a robust, scalable solution that could handle rapid growth 
-                      while maintaining exceptional user experience. We approached this challenge 
-                      with a comprehensive strategy that prioritized performance, security, and 
-                      seamless integration with existing systems.
-                    </p>
-                  </div>
-                </section>
-
-                <section className="animate-fade-in" style={{ animationDelay: "200ms" }}>
                   <h2 className="font-display font-bold text-2xl md:text-3xl mb-6">
                     Our Solution
                   </h2>
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-muted-foreground leading-relaxed">
-                      We architected a modern, cloud-native solution leveraging cutting-edge 
-                      technologies. Our team implemented advanced features including real-time 
-                      data processing, intelligent caching strategies, and automated scaling to 
-                      ensure the platform could grow with the business.
-                    </p>
-                  </div>
+                  <ul className="space-y-4">
+                    {project.solution.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-2 h-2 rounded-full bg-primary" />
+                        </div>
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </section>
               </div>
 
@@ -191,10 +175,6 @@ const ProjectDetail = () => {
                     Project Details
                   </h3>
                   <dl className="space-y-4">
-                    <div>
-                      <dt className="text-sm text-muted-foreground mb-1">Client</dt>
-                      <dd className="font-medium text-foreground">{project.client}</dd>
-                    </div>
                     <div>
                       <dt className="text-sm text-muted-foreground mb-1">Industry</dt>
                       <dd className="font-medium text-foreground">{project.industry}</dd>
