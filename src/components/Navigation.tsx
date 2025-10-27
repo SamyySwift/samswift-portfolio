@@ -6,6 +6,23 @@ import { Button } from "@/components/ui/button";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Smooth scroll function
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerOffset = 80; // Account for fixed header
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+    setIsOpen(false); // Close mobile menu if open
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,18 +42,35 @@ const Navigation = () => {
             <Link to="/projects" className="text-foreground hover:text-primary transition-colors">
               Projects
             </Link>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#about" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => handleSmoothScroll(e, 'about')}
+            >
               About
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#contact" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => handleSmoothScroll(e, 'contact')}
+            >
               Contact
             </a>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
-              <a href="#contact">Book Consultation</a>
+            <Button 
+              asChild 
+              className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
+            >
+              <a 
+                href="#contact" 
+                onClick={(e) => handleSmoothScroll(e, 'contact')}
+                className="cursor-pointer"
+              >
+                Book Consultation
+              </a>
             </Button>
           </div>
 
@@ -70,20 +104,26 @@ const Navigation = () => {
               </Link>
               <a 
                 href="#about" 
-                className="text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
+                className="text-foreground hover:text-primary transition-colors py-2 cursor-pointer"
+                onClick={(e) => handleSmoothScroll(e, 'about')}
               >
                 About
               </a>
               <a 
                 href="#contact" 
-                className="text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
+                className="text-foreground hover:text-primary transition-colors py-2 cursor-pointer"
+                onClick={(e) => handleSmoothScroll(e, 'contact')}
               >
                 Contact
               </a>
               <Button asChild className="bg-gradient-primary text-primary-foreground w-full mt-2">
-                <a href="#contact" onClick={() => setIsOpen(false)}>Book Consultation</a>
+                <a 
+                  href="#contact" 
+                  onClick={(e) => handleSmoothScroll(e, 'contact')}
+                  className="cursor-pointer"
+                >
+                  Book Consultation
+                </a>
               </Button>
             </div>
           </div>

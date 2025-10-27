@@ -1,13 +1,13 @@
-import hrHiringImg from '@/assets/hr-hiring-automation.jpg';
-import leadCaptureImg from '@/assets/lead-capture-bot.jpg';
-import ragSystemImg from '@/assets/rag-system.jpg';
-import cakeEcommerceImg from '@/assets/cake-ecommerce.jpg';
-import kConectImg from '@/assets/k-conect.jpg';
-import canIEatThisImg from '@/assets/can-i-eat-this.jpg';
-import plantDiseaseImg from '@/assets/plant-disease-detection.jpg';
-import futureScoutImg from '@/assets/future-scout.jpg';
-import drowsinessDetectorImg from '@/assets/drowsiness-detector.jpg';
-import signatureRedactorImg from '@/assets/signature-redactor.jpg';
+import hrHiringImg from "@/assets/hr-hiring-automation.jpg";
+import leadCaptureImg from "@/assets/lead-capture-bot.jpg";
+import ragSystemImg from "@/assets/rag-system.jpg";
+import cakeEcommerceImg from "@/assets/cake-ecommerce.jpg";
+import kConectImg from "@/assets/k-conect.jpeg";
+import canIEatThisImg from "@/assets/can-i-eat-this.jpg";
+import plantDiseaseImg from "@/assets/plant-disease-detection.jpg";
+import futureScoutImg from "@/assets/future-scout.jpg";
+import drowsinessDetectorImg from "@/assets/drowsiness-detector.jpg";
+import signatureRedactorImg from "@/assets/signature-redactor.jpg";
 
 export interface Project {
   id: string;
@@ -35,7 +35,8 @@ export const projects: Project[] = [
     year: 2025,
     industry: "AI Automation",
     technologies: ["n8n", "Gmail", "Google Drive", "Google Sheets", "AI"],
-    summary: "Automated HR hiring workflow that processes incoming resumes from Gmail, stores them in Google Drive, and uses AI to analyze candidate information for streamlined recruitment.",
+    summary:
+      "Automated HR hiring workflow that processes incoming resumes from Gmail, stores them in Google Drive, and uses AI to analyze candidate information for streamlined recruitment.",
     challenge: [
       "Manual resume screening was time-consuming",
       "Inconsistent candidate evaluation process",
@@ -61,8 +62,16 @@ export const projects: Project[] = [
     title: "Lead Capture Instagram Bot",
     year: 2025,
     industry: "AI Automation",
-    technologies: ["n8n", "Instagram API", "Webhooks", "AI", "CRM Integration"],
-    summary: "Intelligent automation that captures leads from Instagram interactions and processes them for marketing and sales follow-up with seamless CRM integration.",
+    technologies: [
+      "n8n",
+      "Instagram API",
+      "Webhooks",
+      "AI",
+      "ManyChat",
+      "OpenAI",
+    ],
+    summary:
+      "Intelligent automation that captures leads from Instagram interactions and processes them for marketing and sales follow-up with seamless CRM integration.",
     challenge: [
       "Manual lead capture was slow and error-prone",
       "Delayed response times to potential customers",
@@ -78,7 +87,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/SamyySwift/AI-Automations",
     featured: true,
     metrics: [
-      { label: "Leads Captured", value: "1000+" },
+      { label: "Leads Captured", value: "10+" },
       { label: "Response Time", value: "<5min" },
       { label: "Conversion", value: "+45%" },
     ],
@@ -89,7 +98,8 @@ export const projects: Project[] = [
     year: 2025,
     industry: "AI Automation",
     technologies: ["n8n", "Vector Database", "AI", "LangChain", "REST API"],
-    summary: "Advanced Retrieval-Augmented Generation workflow that implements intelligent knowledge management for improved information retrieval and AI-powered content generation.",
+    summary:
+      "Advanced Retrieval-Augmented Generation workflow that implements intelligent knowledge management for improved information retrieval and AI-powered content generation.",
     challenge: [
       "Traditional search was inefficient for large knowledge bases",
       "Difficulty in finding relevant information quickly",
@@ -118,7 +128,8 @@ export const projects: Project[] = [
     year: 2025,
     industry: "Web Development",
     technologies: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vite"],
-    summary: "Full-featured e-commerce platform for handcrafted cakes with custom ordering, real-time inventory, and seamless checkout experience.",
+    summary:
+      "Full-featured e-commerce platform for handcrafted cakes with custom ordering, real-time inventory, and seamless checkout experience.",
     challenge: [
       "Needed an online presence to reach more customers",
       "Manual order processing was inefficient",
@@ -141,11 +152,12 @@ export const projects: Project[] = [
   },
   {
     id: "k-conect",
-    title: "K-Conect Community Platform",
+    title: "K-Conect Events Reimagined",
     year: 2025,
     industry: "Web Development",
     technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
-    summary: "Professional community networking platform that connects individuals and organizations for collaboration, knowledge sharing, and community impact initiatives.",
+    summary:
+      "Experience a better way to network at events. Smart matchmaking, efficient connections, and engaging interactions that enhance your event experience.",
     challenge: [
       "Professionals lacked a dedicated platform for meaningful connections",
       "Community collaboration was fragmented across tools",
@@ -172,7 +184,8 @@ export const projects: Project[] = [
     year: 2025,
     industry: "Web Development",
     technologies: ["TypeScript", "JavaScript", "React", "Node.js", "AI Vision"],
-    summary: "Intelligent food allergen scanning application that uses AI to analyze food product labels and ingredients, helping users identify potential allergens and make safe dietary choices.",
+    summary:
+      "Intelligent food allergen scanning application that uses AI to analyze food product labels and ingredients, helping users identify potential allergens and make safe dietary choices.",
     challenge: [
       "People with allergies struggled to quickly identify safe foods",
       "Reading ingredient labels was time-consuming and error-prone",
@@ -200,8 +213,16 @@ export const projects: Project[] = [
     title: "AI Plant Disease Detection",
     year: 2024,
     industry: "Machine Learning",
-    technologies: ["Python", "TensorFlow", "OpenCV", "YOLO v8", "Streamlit", "OpenAI"],
-    summary: "Innovative computer vision solution that leverages AI technology to revolutionize how farmers detect and manage plant diseases, empowering them with timely and accurate identification tools for early intervention and minimizing crop loss.",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "YOLO v8",
+      "Streamlit",
+      "OpenAI",
+    ],
+    summary:
+      "Innovative computer vision solution that leverages AI technology to revolutionize how farmers detect and manage plant diseases, empowering them with timely and accurate identification tools for early intervention and minimizing crop loss.",
     challenge: [
       "Farmers lacked timely disease identification tools",
       "Manual inspection was slow and inaccurate",
@@ -227,8 +248,18 @@ export const projects: Project[] = [
     title: "Future Scout - Career Advisory Platform",
     year: 2024,
     industry: "Machine Learning",
-    technologies: ["React", "TypeScript", "Vite", "Shadcn UI", "Node.js", "Express", "Supabase", "PayStack"],
-    summary: "Your personal career advisor - an AI-powered platform that provides personalized career guidance, skill assessment, and professional development recommendations to help individuals navigate their career paths.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "Supabase",
+      "PayStack",
+    ],
+    summary:
+      "Your personal career advisor - an AI-powered platform that provides personalized career guidance, skill assessment, and professional development recommendations to help individuals navigate their career paths.",
     challenge: [
       "Job seekers struggled to find personalized career guidance",
       "Career planning tools were generic and unhelpful",
@@ -241,7 +272,7 @@ export const projects: Project[] = [
       "Integration with payment system for premium features",
     ],
     imageUrl: futureScoutImg,
-    liveUrl: "https://future-scout.vercel.app/",
+    liveUrl: "https://github.com/SamyySwift/FutureScout",
     featured: false,
     metrics: [
       { label: "Users", value: "1000+" },
@@ -254,8 +285,15 @@ export const projects: Project[] = [
     title: "Real-Time Drowsiness Detection",
     year: 2023,
     industry: "Machine Learning",
-    technologies: ["Python", "OpenCV", "Mediapipe", "TensorFlow", "Computer Vision"],
-    summary: "Real-time video analytics tool that uses computer vision to constantly monitor driver alertness by analyzing eye closure patterns and facial features to prevent accidents caused by drowsiness.",
+    technologies: [
+      "Python",
+      "OpenCV",
+      "Mediapipe",
+      "TensorFlow",
+      "Computer Vision",
+    ],
+    summary:
+      "Real-time video analytics tool that uses computer vision to constantly monitor driver alertness by analyzing eye closure patterns and facial features to prevent accidents caused by drowsiness.",
     challenge: [
       "Drowsiness is a major cause of road accidents",
       "No real-time monitoring system for driver alertness",
@@ -281,8 +319,16 @@ export const projects: Project[] = [
     title: "Custom Signature Detector & Redactor",
     year: 2023,
     industry: "Machine Learning",
-    technologies: ["Python", "TensorFlow", "OpenCV", "Object Detection API", "img2pdf", "pdf2image"],
-    summary: "Custom object detection model built with TensorFlow to automatically recognize and redact signatures from PDF documents, ensuring privacy and compliance with data protection regulations for sensitive documents.",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Object Detection API",
+      "img2pdf",
+      "pdf2image",
+    ],
+    summary:
+      "Custom object detection model built with TensorFlow to automatically recognize and redact signatures from PDF documents, ensuring privacy and compliance with data protection regulations for sensitive documents.",
     challenge: [
       "Manual signature redaction was time-consuming",
       "Privacy compliance required accurate signature detection",
@@ -305,6 +351,12 @@ export const projects: Project[] = [
   },
 ];
 
-export const industries = Array.from(new Set(projects.map(p => p.industry))).sort();
-export const technologies = Array.from(new Set(projects.flatMap(p => p.technologies))).sort();
-export const years = Array.from(new Set(projects.map(p => p.year))).sort((a, b) => b - a);
+export const industries = Array.from(
+  new Set(projects.map((p) => p.industry))
+).sort();
+export const technologies = Array.from(
+  new Set(projects.flatMap((p) => p.technologies))
+).sort();
+export const years = Array.from(new Set(projects.map((p) => p.year))).sort(
+  (a, b) => b - a
+);

@@ -12,13 +12,13 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
-  const featuredProjects = projects.filter(p => p.featured).slice(0, 3);
+  const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      
+
       {/* Featured Projects Section */}
       <section id="projects" className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,8 +32,8 @@ const Index = () => {
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Explore our latest work—transformative digital experiences built for 
-                industry leaders and innovative startups.
+                Explore our latest work—transformative digital experiences built
+                for industry leaders and innovative startups.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>

@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const project = projects.find(p => p.id === id);
+  const project = projects.find((p) => p.id === id);
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -17,7 +17,7 @@ const ProjectDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -50,9 +50,7 @@ const ProjectDetail = () => {
                   {project.industry}
                 </Badge>
                 {project.featured && (
-                  <Badge variant="secondary">
-                    Featured
-                  </Badge>
+                  <Badge variant="secondary">Featured</Badge>
                 )}
               </div>
 
@@ -61,10 +59,10 @@ const ProjectDetail = () => {
               </h1>
 
               <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <span>{project.year}</span>
-              </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  <span>{project.year}</span>
+                </div>
               </div>
 
               <p className="text-xl text-muted-foreground max-w-3xl">
@@ -73,24 +71,22 @@ const ProjectDetail = () => {
 
               {/* CTA */}
               <div className="flex flex-wrap gap-4">
-                <Button 
+                <Button
                   size="lg"
                   className="bg-gradient-primary text-primary-foreground hover:opacity-90"
                   asChild
                 >
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    Visit Live Site
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit Site
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  asChild
-                >
-                  <a href="#contact">
-                    Start Your Project
-                  </a>
+                <Button size="lg" variant="outline" asChild>
+                  <a href="#contact">Start Your Project</a>
                 </Button>
               </div>
             </div>
@@ -106,9 +102,7 @@ const ProjectDetail = () => {
                     <div className="font-display font-bold text-4xl md:text-5xl text-primary mb-2">
                       {metric.value}
                     </div>
-                    <div className="text-muted-foreground">
-                      {metric.label}
-                    </div>
+                    <div className="text-muted-foreground">{metric.label}</div>
                   </div>
                 ))}
               </div>
@@ -136,7 +130,10 @@ const ProjectDetail = () => {
                 </section>
 
                 {/* Solution */}
-                <section className="animate-fade-in" style={{ animationDelay: "100ms" }}>
+                <section
+                  className="animate-fade-in"
+                  style={{ animationDelay: "100ms" }}
+                >
                   <h2 className="font-display font-bold text-2xl md:text-3xl mb-6">
                     Our Solution
                   </h2>
@@ -170,18 +167,29 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Quick Facts */}
-                <div className="p-8 rounded-2xl bg-card border border-border animate-fade-in" style={{ animationDelay: "100ms" }}>
+                <div
+                  className="p-8 rounded-2xl bg-card border border-border animate-fade-in"
+                  style={{ animationDelay: "100ms" }}
+                >
                   <h3 className="font-display font-semibold text-xl mb-4">
                     Project Details
                   </h3>
                   <dl className="space-y-4">
                     <div>
-                      <dt className="text-sm text-muted-foreground mb-1">Industry</dt>
-                      <dd className="font-medium text-foreground">{project.industry}</dd>
+                      <dt className="text-sm text-muted-foreground mb-1">
+                        Industry
+                      </dt>
+                      <dd className="font-medium text-foreground">
+                        {project.industry}
+                      </dd>
                     </div>
                     <div>
-                      <dt className="text-sm text-muted-foreground mb-1">Year</dt>
-                      <dd className="font-medium text-foreground">{project.year}</dd>
+                      <dt className="text-sm text-muted-foreground mb-1">
+                        Year
+                      </dt>
+                      <dd className="font-medium text-foreground">
+                        {project.year}
+                      </dd>
                     </div>
                   </dl>
                 </div>
@@ -195,7 +203,7 @@ const ProjectDetail = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {projects
-                  .filter(p => p.id !== project.id)
+                  .filter((p) => p.id !== project.id)
                   .slice(0, 3)
                   .map((relatedProject) => (
                     <Link

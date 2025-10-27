@@ -17,7 +17,8 @@ const Contact = () => {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? Book a free consultation and let's discuss how I can help bring your ideas to life.
+              Have a project in mind? Book a free consultation and let's discuss
+              how I can help bring your ideas to life.
             </p>
           </div>
 
@@ -27,7 +28,10 @@ const Contact = () => {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-foreground">
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium text-foreground"
+                    >
                       Name
                     </label>
                     <Input
@@ -37,7 +41,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium text-foreground"
+                    >
                       Email
                     </label>
                     <Input
@@ -50,7 +57,10 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="service" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="service"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Service Needed
                   </label>
                   <select
@@ -66,7 +76,10 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Project Details
                   </label>
                   <Textarea
@@ -77,9 +90,9 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  size="lg" 
+                <Button
+                  type="submit"
+                  size="lg"
                   className="w-full bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity group"
                 >
                   Book Consultation
@@ -89,7 +102,10 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <div
+              className="space-y-8 animate-fade-in"
+              style={{ animationDelay: "100ms" }}
+            >
               <div className="p-8 rounded-2xl bg-gradient-card backdrop-blur-sm border border-border">
                 <h3 className="font-display font-semibold text-xl mb-6">
                   Contact Information
@@ -100,12 +116,14 @@ const Contact = () => {
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-foreground mb-1">Email</div>
-                      <a 
+                      <div className="font-medium text-foreground mb-1">
+                        Email
+                      </div>
+                      <a
                         href="mailto:hello@example.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        hello@example.com
+                        samueludofia94@gmail.com
                       </a>
                     </div>
                   </div>
@@ -115,12 +133,14 @@ const Contact = () => {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-foreground mb-1">Phone</div>
-                      <a 
+                      <div className="font-medium text-foreground mb-1">
+                        Phone
+                      </div>
+                      <a
                         href="tel:+1234567890"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
+                        +(234) 809-670-2056
                       </a>
                     </div>
                   </div>
@@ -130,7 +150,9 @@ const Contact = () => {
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-foreground mb-1">Location</div>
+                      <div className="font-medium text-foreground mb-1">
+                        Location
+                      </div>
                       <p className="text-muted-foreground">
                         Remote / Available Worldwide
                       </p>
@@ -142,19 +164,25 @@ const Contact = () => {
               {/* Services Cards */}
               <div className="space-y-4">
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">AI Automation</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    AI Automation
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Intelligent workflows, chatbots, and process automation
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">Machine Learning</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Machine Learning
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Predictive models, data analysis, and ML solutions
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">Web Development</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Web Development
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Full-stack applications with modern frameworks
                   </p>

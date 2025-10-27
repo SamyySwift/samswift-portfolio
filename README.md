@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# SamSwift Portfolio 🚀
 
-## Project info
+A modern, responsive portfolio website showcasing AI automation projects, web development work, and machine learning solutions.
 
-**URL**: https://lovable.dev/projects/2dd142ae-22a2-41eb-adf6-a72e31c5d25c
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsive Design**: Beautiful, mobile-first design built with Tailwind CSS
+- **Project Showcase**: Interactive project cards with filtering by industry and technology
+- **Modern Tech Stack**: Built with React, TypeScript, and Vite for optimal performance
+- **Smooth Animations**: Engaging user experience with smooth transitions and hover effects
+- **SEO Optimized**: Built with best practices for search engine optimization
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Package Manager**: npm/bun
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2dd142ae-22a2-41eb-adf6-a72e31c5d25c) and start prompting.
+## 📋 Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+Before you begin, ensure you have the following installed:
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or bun package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/SamyySwift/samswift-portfolio.git
+cd samswift-portfolio
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or
+bun install
+```
 
-**Use GitHub Codespaces**
+3. Start the development server:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+# or
+bun run dev
+```
 
-## What technologies are used for this project?
+4. Open your browser and navigate to `http://localhost:5173`
 
-This project is built with:
+## 📁 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/          # React components
+│   ├── ui/             # shadcn/ui components
+│   ├── About.tsx       # About section
+│   ├── Contact.tsx     # Contact form
+│   ├── Hero.tsx        # Hero section
+│   ├── Navigation.tsx  # Navigation bar
+│   ├── ProjectCard.tsx # Project display card
+│   └── ProjectFilter.tsx # Project filtering
+├── data/               # Data and content
+│   └── projects.ts     # Project data and interfaces
+├── pages/              # Page components
+│   ├── Index.tsx       # Homepage
+│   ├── Projects.tsx    # Projects listing
+│   └── ProjectDetail.tsx # Individual project page
+├── assets/             # Images and media
+└── hooks/              # Custom React hooks
+```
 
-## How can I deploy this project?
+## 🎯 Project Categories
 
-Simply open [Lovable](https://lovable.dev/projects/2dd142ae-22a2-41eb-adf6-a72e31c5d25c) and click on Share -> Publish.
+The portfolio showcases projects across three main categories:
 
-## Can I connect a custom domain to my Lovable project?
+- **AI Automation**: Intelligent workflow automation using n8n, AI, and various APIs
+- **Web Development**: Full-stack applications built with modern technologies
+- **Machine Learning**: Computer vision and AI-powered solutions
 
-Yes, you can!
+### Adding New Projects
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Add project images to `src/assets/`
+2. Update project data in `src/data/projects.ts`
+3. Follow the existing project structure in the `projects` array
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Modifying Content
+
+- **Hero Section**: Edit `src/components/Hero.tsx`
+- **About Section**: Edit `src/components/About.tsx`
+- **Contact Information**: Edit `src/components/Contact.tsx`
+
+### Styling
+
+- Global styles: `src/index.css`
+- Tailwind configuration: `tailwind.config.ts`
+- Component styles use Tailwind utility classes
+
+---
+
+**Built with ❤️ using React, TypeScript, and Tailwind CSS**
